@@ -1,4 +1,5 @@
 import React, { createContext, useContext, useEffect, useState } from 'react';
+import { useHistory } from 'react-router-dom';
 import IUser from '~/models/user';
 
 interface IAuthContext {
@@ -14,6 +15,8 @@ const AuthContext = createContext<IAuthContext>({} as IAuthContext);
 const useAuth = (): IAuthContext => useContext(AuthContext);
 
 const AuthComponent: React.FC = ({ children }) => {
+  const history = useHistory();
+
   const [token, setToken] = useState<string | null>(() => {
     const sessionStorageToken = sessionStorage.getItem(
       '@AUTHENTICATION:JWT_TOKEN',
@@ -34,6 +37,7 @@ const AuthComponent: React.FC = ({ children }) => {
 
   const signOut = () => {
     sessionStorage.clear();
+    history.push('/signin');
   };
 
   return (

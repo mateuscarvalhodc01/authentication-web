@@ -9,7 +9,7 @@
 
 ## Sobre <a name = "about"></a>
 
-Este é um projeto de portifólio com módulo de autenticação completo:
+Este é um projeto de portfólio com módulo de autenticação completo:
 
 - Login - Autentica um usuário com o método JWT API TOKEN
 - Cadastro - Cadastra um novo usuário no banco de dados.
@@ -47,7 +47,7 @@ Você também poderá ver lint erros no console.
 
 ## Utilização <a name = "usage"></a>
 
-Este projeto tem como objetivo apenas apresentação em meu portifólio pessoal e como objeto de estudos para outros desenvolvedores.
+Este projeto tem como objetivo apenas apresentação em meu portfólio pessoal e como objeto de estudos para outros desenvolvedores.
 
 ## Autor
 
